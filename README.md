@@ -20,7 +20,7 @@ This project is a responsive webpage that displays information about various cou
 
 ### Live Demo:
 
-You can view the live demo of the project at: 
+You can view the live demo of the project at: https://country-flags-by-mj.netlify.app/
 
 ### Setup Instructions:
 
