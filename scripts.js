@@ -38,6 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
                   </div>
               </div>
           `;
+      countryCard.addEventListener("click", () => {
+        window.location.href = `country-details.html?name=${country.name.common}`;
+      });
       countriesContainer.appendChild(countryCard);
     });
   }
