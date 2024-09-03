@@ -87,13 +87,14 @@ document.addEventListener("DOMContentLoaded", () => {
                <p class="card-text"><strong>Coordinates:</strong> Latitude: ${
                  country.latlng[0]
                }, Longitude: ${country.latlng[1]}</p>
-<p class="card-text"><strong>Common Name:</strong> ${country.name.common}</p>
+               <p class="card-text"><strong>Common Name:</strong> ${
+                 country.name.common
+               }</p>
 
               <p class="card-text"><strong>Translations:</strong> ${
                 country.translations
                   ? Object.entries(country.translations)
                       .map(([lang, names]) => {
-                        // Combine official and common names, ensuring no duplicates
                         const uniqueNames = new Set(
                           [names.official, names.common].filter(Boolean)
                         );
