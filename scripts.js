@@ -54,14 +54,24 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   document.querySelectorAll(".dropdown-item").forEach((item) => {
-    filterRegionSelect.addEventListener("click", () => {
-      const region = filterRegionSelect.value;
-      const filteredCountries = region
-        ? countriesData.filter((country) => country.region === region)
-        : countriesData;
-      displayCountries(filteredCountries);
+    item.addEventListener("click", function () {
+      const region = this.getAttribute("data-region");
+      filterRegionSelect.textContent = this.textContent;
+      filterCountries(region);
     });
   });
+
+  function filterCountries(region) {
+    const searchTerm = searchInput.value.toLowerCase();
+    const filteredCountries = countriesData.filter((country) => {
+      const matchesRegion = region ? country.region === region : true;
+      const matchesSearchTerm = country.name.common
+        .toLowerCase()
+        .includes(searchTerm);
+      return matchesRegion && matchesSearchTerm;
+    });
+    displayCountries(filteredCountries);
+  }
 
   toggleButton.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
