@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
          
           <div class="card-body">
             <h5 class="card-title">${country.name?.common || "N/A"}</h5>
-          <br>
+            <br>
              <p class="card-text"><strong>Native Name:</strong> ${
                country.name?.official
              }</p>
@@ -85,10 +85,17 @@ document.addEventListener("DOMContentLoaded", () => {
            
             <br> 
             
-            <p class="card-text"><strong style="font-size:20px">Border Countries:</strong><br> ${
-              country.borders ? country.borders.join(", ") : "None"
-            }</p>
-             
+          <p class="card-text">
+  <strong style="font-size:20px">Border Countries:</strong><br>
+  ${
+    country.borders
+      ? country.borders
+          .map((border) => `<span class="border-country">${border}</span>`)
+          .join("")
+      : "None"
+  }
+</p>
+
                               
         </div>
       `;
