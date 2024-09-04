@@ -85,18 +85,17 @@ document.addEventListener("DOMContentLoaded", () => {
            
             <br> 
             
-          <p class="card-text">
-  <strong style="font-size:20px">Border Countries:</strong><br>
-  ${
-    country.borders
-      ? country.borders
-          .map((border) => `<span class="border-country">${border}</span>`)
-          .join("")
-      : "None"
-  }
-</p>
-
-                              
+          <p class="card-text"><strong style="font-size:20px">Border Countries:</strong><br>
+          ${
+            country.borders
+              ? country.borders
+                  .map(
+                    (border) => `<span class="border-country">${border}</span>`
+                  )
+                  .join("")
+              : "None"
+          }
+         </p>                        
         </div>
       `;
   }

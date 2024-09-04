@@ -36,24 +36,6 @@ body {
   margin-left: 10px;
 }
 
-.border-country {
-  width: 80px;
-  height: 40px;
-  line-height: 1.5rem;
-  text-align: center;
-  vertical-align: middle;
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  margin: 0.2rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  background-color: #f8f9fa;
-  font-size: 16px;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.1s;
-}
-
 #search {
   padding-left: 35px !important;
   text-transform: capitalize;
@@ -121,4 +103,22 @@ body {
 .dark-mode p,
 .dark-mode .card-title {
   color: #ffffff;
+}
+
+.border-country {
+  width: 80px;
+  height: 40px;
+  line-height: 1.5rem;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.1s;
 }
