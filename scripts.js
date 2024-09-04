@@ -53,18 +53,22 @@ document.addEventListener("DOMContentLoaded", () => {
     displayCountries(filteredCountries);
   });
 
-  filterRegionSelect.addEventListener("change", () => {
-    const region = filterRegionSelect.value;
-    const filteredCountries = region
-      ? countriesData.filter((country) => country.region === region)
-      : countriesData;
-    displayCountries(filteredCountries);
+  document.querySelectorAll(".dropdown-item").forEach((item) => {
+    filterRegionSelect.addEventListener("click", () => {
+      const region = filterRegionSelect.value;
+      const filteredCountries = region
+        ? countriesData.filter((country) => country.region === region)
+        : countriesData;
+      displayCountries(filteredCountries);
+    });
   });
 
   toggleButton.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
-    toggleButton.textContent = document.body.classList.contains("dark-mode")
-      ? "☀️ Light Mode"
-      : "🌙 Dark Mode";
+    if (document.body.classList.contains("dark-mode")) {
+      toggleButton.innerHTML = '<i class="fa-solid fa-sun"></i> Light Mode';
+    } else {
+      toggleButton.innerHTML = '<i class="fa-solid fa-moon"></i> Dark Mode';
+    }
   });
 });

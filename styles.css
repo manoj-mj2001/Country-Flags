@@ -21,8 +21,13 @@ body {
   object-fit: cover;
 }
 
+.card-body .card-title {
+  font-weight: 800;
+}
+
 .navbar-custom {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-weight: 800;
 }
 
 .fa-solid {
@@ -31,20 +36,43 @@ body {
 }
 
 #search {
-  padding-left: 35px;
+  padding-left: 35px !important;
   text-transform: capitalize;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  outline: none;
+  border: none;
 }
 
 #search::placeholder {
   color: #333;
+  text-transform: none;
 }
 
 #darkModeToggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   width: 150px;
-  text-align: center;
-  text-decoration: none;
   border: 0;
   outline: 0;
+}
+
+#darkModeToggle i {
+  position: relative;
+}
+
+#filterRegion {
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 8px;
+}
+
+.dropdown-menu {
+  margin: 0;
+  padding: 0;
 }
 
 .dark-mode {
