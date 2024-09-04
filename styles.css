@@ -44,6 +44,7 @@ body {
   padding: 10px;
   outline: none;
   border: none;
+  background-color: #fefefe;
 }
 
 #search::placeholder {
@@ -69,6 +70,7 @@ body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
   margin: 8px;
+  background-color: #fefefe;
 }
 
 .dropdown-menu {
@@ -108,7 +110,7 @@ body {
 .back-btn {
   border: none;
   outline: none;
-  background-color: #f8f9fa;
+  background-color: #fefefe;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: background-color 0.1s;
   padding: 0.5rem 1rem;
@@ -133,7 +135,7 @@ body {
   margin: 0.2rem;
   border: 1px solid #ddd;
   border-radius: 4px;
-  background-color: #f8f9fa;
+  background-color: #fefefe;
   font-size: 16px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
