@@ -3,6 +3,7 @@ body {
   background-color: #f8f9fa;
   color: #333;
   font-family: "Nunito Sans", sans-serif;
+  transition: background-color 0.1s, color 0.1s;
 }
 
 .card {
