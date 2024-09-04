@@ -105,6 +105,23 @@ body {
   color: #ffffff;
 }
 
+.back-btn {
+  border: none;
+  outline: none;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.1s;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.bi-arrow-left {
+  font-weight: 500;
+}
+
 .border-country {
   width: 80px;
   height: 40px;
