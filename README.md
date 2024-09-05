@@ -1,8 +1,10 @@
-## Country Flags - Frontendmentor.com Task
+**Future Core Innovations Task**
+
+## Country Flags
 
 ### Project Overview:
 
-This project is a responsive webpage that displays information about various countries, including their flags, names, populations, regions, and capitals. The application features a dynamic design that allows users to switch between dark and light modes seamlessly. It is built using Bootstrap, HTML, CSS, and JavaScript.
+This project is a responsive webpage that displays information about various countries, including their flags, names, populations, regions, and capitals. The application features a dynamic design that allows users to switch between dark and light modes seamlessly. It is built using Bootstrap, HTML, CSS, API and JavaScript.
 
 ### Features:
 
@@ -16,7 +18,7 @@ This project is a responsive webpage that displays information about various cou
 - **Bootstrap**: For responsive design and styling.
 - **HTML**: For structuring the webpage.
 - **CSS**: For custom styling and theme management.
-- **JavaScript**: For dynamic features, such as dark/light mode switching and filtering.
+- **JavaScript**: For dynamic features, such as dark/light mode switching, filtering & api integration for fetching coutries info.
 
 ### Live Demo:
 
